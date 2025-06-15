@@ -86,7 +86,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, logo }) => {
               <div className="flex gap-[24px] mt-[20px]">
                 <Link
                   className="h-[60px] w-[60px] bg-[#1C1E22] drop-shadow-xl/50 rounded-xl flex items-center justify-center"
-                  href="https://web.facebook.com/rashadul5"
+                  href="https://facebook.com/rashadul5"
                   target="_blank"
                 >
                   <FiFacebook className="text-[#C4CFDE] text-[24px]" />
