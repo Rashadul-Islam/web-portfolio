@@ -20,7 +20,7 @@ const Experiences = ({ experience }) => {
               <div className="ml-8 flex-1 text-[#7C838E] hover:text-[#C4CFDE] bg-gradient-to-br from-[#212428] to-[#16181c] rounded-[10px] hover:bg-[linear-gradient(145deg,_rgb(30,32,36),_rgb(35,39,43))] drop-shadow-xl/50">
                 <div className="order-1 space-y-2 rounded-lg shadow transition duration-300 ease-in-out w-full xl:p-[40px] p-[25px]">
                   <div className="flex xl:flex-row flex-col items-center justify-between">
-                    <div>
+                    <div className="self-start">
                       <h3 className="text-[24px] font-medium text-[#C4CFDE]">
                         {item.title}
                       </h3>

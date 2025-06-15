@@ -8,7 +8,7 @@ import ContactForm from "./ContactForm";
 const ContactMe = () => {
   return (
     <div
-      className="h-auto xl:w-[1320px] w-full mx-auto xl:px-0 lg:px-5 md:px-5 px-0 mt-[99px]"
+      className="h-auto xl:w-[1320px] md:w-full w-[96%] mx-auto xl:px-0 lg:px-5 md:px-5 px-0 mt-[99px]"
       id="contact"
     >
       <p className="text-[#F9004D] text-[14px] tracking-[1px] text-center w-full">
