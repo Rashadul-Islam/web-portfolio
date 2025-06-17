@@ -1,11 +1,11 @@
 export const tabName = [
   {
-    selection: "education",
-    title: "Education",
-  },
-  {
     selection: "experience",
     title: "Experience",
+  },
+  {
+    selection: "education",
+    title: "Education",
   },
   {
     selection: "skills",

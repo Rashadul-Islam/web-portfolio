@@ -14,6 +14,11 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, logo }) => {
     }
   };
 
+  const handlelinkClick = () => {
+    setSidebarOpen(false);
+    document.body.style.overflow = "auto";
+  };
+
   return (
     <>
       {sidebarOpen ? (
@@ -29,10 +34,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, logo }) => {
               <Image src={logo} alt="logo" height={70} width={"auto"} />
               <div
                 className="text-[#FF014F] text-[25px] h-[45px] w-[45px] rounded-full shadow-xl/30 cursor-pointer flex items-center justify-center"
-                onClick={() => {
-                  setSidebarOpen(!sidebarOpen);
-                  document.body.style.overflow = "auto";
-                }}
+                onClick={() => handlelinkClick()}
               >
                 <RxCross2 />
               </div>
@@ -47,21 +49,21 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, logo }) => {
               <Link
                 className="hover:text-[#FF014F] text-[#C4CFDE]"
                 href="#home"
-                onClick={() => setSidebarOpen(false)}
+                onClick={() => handlelinkClick()}
               >
                 Home
               </Link>
               <Link
                 className="hover:text-[#FF014F] text-[#C4CFDE]"
                 href="#features"
-                onClick={() => setSidebarOpen(false)}
+                onClick={() => handlelinkClick()}
               >
                 Features
               </Link>
               <Link
                 className="hover:text-[#FF014F] text-[#C4CFDE]"
                 href="#resume"
-                onClick={() => setSidebarOpen(false)}
+                onClick={() => handlelinkClick()}
               >
                 Resume
               </Link>
@@ -74,7 +76,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, logo }) => {
               <Link
                 className="hover:text-[#FF014F] text-[#C4CFDE]"
                 href="#contact"
-                onClick={() => setSidebarOpen(false)}
+                onClick={() => handlelinkClick()}
               >
                 Contact
               </Link>

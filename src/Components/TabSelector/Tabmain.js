@@ -9,10 +9,13 @@ import { experience } from "@/app/utils/Experience";
 import Skills from "./Skills";
 
 const Tabmain = () => {
-  const [selectedTab, setSelectedTab] = useState("education");
+  const [selectedTab, setSelectedTab] = useState("experience");
 
   return (
-    <div className="xl:w-[1320px] w-[96%] mx-auto mt-[99px] font-[montserrat]" id="resume">
+    <div
+      className="xl:w-[1320px] w-[96%] mx-auto mt-[99px] font-[montserrat]"
+      id="resume"
+    >
       <p className="text-center text-[14px] text-[#F9004D] traking-[1px]">
         3+ YEARS OF EXPERIENCE
       </p>
@@ -30,18 +33,18 @@ const Tabmain = () => {
           />
         ))}
       </div>
-      {selectedTab === "education" ? (
-        <div className="flex xl:flex-row md:flex-row flex-col justify-between xl:gap-x-[40px] md:gap-x-8 gap-x-0">
-          <Education education={education.left} />
-          <Education education={education.right} />
-        </div>
-      ) : (
-        ""
-      )}
       {selectedTab === "experience" ? (
         <div className="flex xl:flex-row md:flex-row flex-col justify-between xl:gap-x-[40px] md:gap-x-8 gap-x-0">
           <Experiences experience={experience.left} />
           <Experiences experience={experience.right} />
+        </div>
+      ) : (
+        ""
+      )}
+      {selectedTab === "education" ? (
+        <div className="flex xl:flex-row md:flex-row flex-col justify-between xl:gap-x-[40px] md:gap-x-8 gap-x-0">
+          <Education education={education.left} />
+          <Education education={education.right} />
         </div>
       ) : (
         ""
