@@ -1,13 +1,15 @@
 import Image from "next/image";
 import myPhoto from "../../Images/myImg.png";
 
-import { FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
+import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import { RiNextjsLine } from "react-icons/ri";
 import { FaNode } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 
 import Link from "next/link";
 import TypeWritter from "./TypeWritter";
+import ButtonCard from "./ButtonCard";
+import { AiFillGithub } from "react-icons/ai";
 
 const Hero = () => {
   return (
@@ -33,27 +35,18 @@ const Hero = () => {
                 FIND WITH ME
               </p>
               <div className="flex gap-[24px] mt-[20px]">
-                <Link
-                  className="h-[60px] w-[60px] bg-[#1C1E22] drop-shadow-xl/50 rounded-xl flex items-center justify-center"
-                  href="https://facebook.com/rashadul5"
-                  target="_blank"
-                >
-                  <FiFacebook className="text-[#C4CFDE] text-[24px]" />
-                </Link>
-                <Link
-                  className="h-[60px] w-[60px] bg-[#1C1E22] drop-shadow-xl/50 rounded-xl flex items-center justify-center"
-                  href="https://www.instagram.com/rashadul4581/"
-                  target="_blank"
-                >
-                  <FiInstagram className="text-[#C4CFDE] text-[24px]" />
-                </Link>
-                <Link
-                  className="h-[60px] w-[60px] bg-[#1C1E22] drop-shadow-xl/50 rounded-xl flex items-center justify-center"
-                  href="https://www.linkedin.com/in/rashadul-islam-398155211/"
-                  target="_blank"
-                >
-                  <FiLinkedin className="text-[#C4CFDE] text-[24px]" />
-                </Link>
+                <ButtonCard
+                  link="https://facebook.com/rashadul5"
+                  icon={<FiFacebook />}
+                />
+                <ButtonCard
+                  link="https://github.com/Rashadul-Islam"
+                  icon={<AiFillGithub />}
+                />
+                <ButtonCard
+                  link="https://www.linkedin.com/in/rashadul-islam-398155211/"
+                  icon={<FiLinkedin />}
+                />
               </div>
             </div>
             <div className="xl:mt-0 md:mt-0 mt-[30px]">
@@ -61,27 +54,18 @@ const Hero = () => {
                 BEST SKILL ON
               </p>
               <div className="flex gap-[24px] mt-[20px]">
-                <Link
-                  className="h-[60px] w-[60px] bg-[#1C1E22] drop-shadow-xl/50 rounded-xl flex items-center justify-center"
-                  href="https://nextjs.org"
-                  target="_blank"
-                >
-                  <RiNextjsLine className="text-[#C4CFDE] text-[24px]" />
-                </Link>
-                <Link
-                  className="h-[60px] w-[60px] bg-[#1C1E22] drop-shadow-xl/50 rounded-xl flex items-center justify-center"
-                  href="https://nodejs.org/en"
-                  target="_blank"
-                >
-                  <FaNode className="text-[#C4CFDE] text-[24px]" />
-                </Link>
-                <Link
-                  className="h-[60px] w-[60px] bg-[#1C1E22] drop-shadow-xl/50 rounded-xl flex items-center justify-center"
-                  href="https://www.mongodb.com/"
-                  target="_blank"
-                >
-                  <SiMongodb className="text-[#C4CFDE] text-[24px]" />
-                </Link>
+                <ButtonCard
+                  link="https://react.dev/"
+                  icon={<RiNextjsLine className="text-[#C4CFDE] text-[24px]" />}
+                />
+                <ButtonCard
+                  link="https://nodejs.org/en"
+                  icon={<FaNode className="text-[#C4CFDE] text-[24px]" />}
+                />
+                <ButtonCard
+                  link="https://www.mongodb.com"
+                  icon={<SiMongodb className="text-[#C4CFDE] text-[24px]" />}
+                />
               </div>
             </div>
           </div>

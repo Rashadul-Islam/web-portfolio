@@ -1,9 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import contactImage from "../../Images/contactImg.png";
-import { FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
+import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import Link from "next/link";
 import ContactForm from "./ContactForm";
+import { AiFillGithub } from "react-icons/ai";
+import ButtonCard from "../Hero/ButtonCard";
 
 const ContactMe = () => {
   return (
@@ -50,27 +52,20 @@ const ContactMe = () => {
               FIND WITH ME
             </p>
             <div className="flex gap-[24px] mt-[20px]">
-              <Link
-                className="h-[60px] w-[60px] bg-[#1C1E22] drop-shadow-xl/50 rounded-xl flex items-center justify-center"
-                href="https://facebook.com/rashadul5"
-                target="_blank"
-              >
-                <FiFacebook className="text-[#C4CFDE] text-[24px]" />
-              </Link>
-              <Link
-                className="h-[60px] w-[60px] bg-[#1C1E22] drop-shadow-xl/50 rounded-xl flex items-center justify-center"
-                href="https://www.instagram.com/rashadul4581/"
-                target="_blank"
-              >
-                <FiInstagram className="text-[#C4CFDE] text-[24px]" />
-              </Link>
-              <Link
-                className="h-[60px] w-[60px] bg-[#1C1E22] drop-shadow-xl/50 rounded-xl flex items-center justify-center"
-                href="https://www.linkedin.com/in/rashadul-islam-398155211/"
-                target="_blank"
-              >
-                <FiLinkedin className="text-[#C4CFDE] text-[24px]" />
-              </Link>
+              <div className="flex gap-[24px] mt-[5px]">
+                <ButtonCard
+                  link="https://facebook.com/rashadul5"
+                  icon={<FiFacebook />}
+                />
+                <ButtonCard
+                  link="https://github.com/Rashadul-Islam"
+                  icon={<AiFillGithub />}
+                />
+                <ButtonCard
+                  link="https://www.linkedin.com/in/rashadul-islam-398155211/"
+                  icon={<FiLinkedin />}
+                />
+              </div>
             </div>
           </div>
         </div>

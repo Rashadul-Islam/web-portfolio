@@ -3,7 +3,7 @@ export const education = {
     {
       id: 1,
       title: "MSc in Information Technology",
-      institution: "Central Queensland University",
+      institution: "Kings Own Institute",
       location: "Sydney, Australia",
       duration: "2024 - cont.",
       description: `Information technology is a field that focuses on the use of

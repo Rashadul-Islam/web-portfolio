@@ -17,26 +17,39 @@ const Education = ({ education }) => {
               </div>
 
               {/* Timeline content */}
-              <div className="ml-8 flex-1 text-[#7C838E] hover:text-[#C4CFDE] bg-gradient-to-br from-[#212428] to-[#16181c] rounded-[10px] hover:bg-[linear-gradient(145deg,_rgb(30,32,36),_rgb(35,39,43))] drop-shadow-xl/50">
-                <div className="order-1 space-y-2 rounded-lg shadow transition duration-300 ease-in-out w-full xl:p-[40px] p-[25px]">
-                  <div className="flex xl:flex-row flex-col items-center justify-between">
-                    <div className="self-start">
-                      <h3 className="text-[24px] font-medium text-[#C4CFDE]">
-                        {item.title}
-                      </h3>
-                      <p className="text-[14px] mb-1">{item.institution}</p>
-                      <p className="text-sm pb-4">
-                        {item.location + " | " + item.duration}
+              <div className="group relative ml-8 flex-1 overflow-hidden rounded-[10px] p-[1px]">
+                {/* animated border */}
+                <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <div className="absolute inset-[-100%] animate-[spin_6s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_20%,#FF014F,#ff4d88,#FF014F,transparent_80%)]" />
+                </div>
+
+                {/* original content */}
+                <div className="relative z-10 text-[#7C838E] hover:text-[#C4CFDE] bg-gradient-to-br from-[#212428] to-[#16181c] rounded-[10px] hover:bg-[linear-gradient(145deg,_rgb(30,32,36),_rgb(35,39,43))] drop-shadow-xl/50">
+                  <div className="order-1 space-y-2 rounded-lg shadow transition duration-300 ease-in-out w-full xl:p-[40px] p-[25px]">
+                    <div className="flex xl:flex-row flex-col items-center justify-between">
+                      <div className="self-start">
+                        <h3 className="text-[24px] font-medium text-[#C4CFDE]">
+                          {item.title}
+                        </h3>
+
+                        <p className="text-[14px] mb-1">{item.institution}</p>
+
+                        <p className="text-sm pb-4">
+                          {item.location + " | " + item.duration}
+                        </p>
+                      </div>
+
+                      <p className="xl:self-center self-start xl:mb-0 mb-2 text-[14px] text-[#FF014F] bg-[linear-gradient(145deg,_rgb(30,32,36),_rgb(35,39,43))] drop-shadow-xl/50 rounded-[5px] px-3 py-2">
+                        {item.gpa}
                       </p>
                     </div>
-                    <p className="xl:self-center self-start xl:mb-0 mb-2 text-[14px] text-[#FF014F] bg-[linear-gradient(145deg,_rgb(30,32,36),_rgb(35,39,43))] drop-shadow-xl/50 rounded-[5px] px-3 py-2">
-                      {item.gpa}
+
+                    <hr className="border-[#121415] mb-[20px]" />
+
+                    <p className="text-sm font-medium leading-snug tracking-wide">
+                      {item.description}
                     </p>
                   </div>
-                  <hr className="border-[#121415] mb-[20px]" />
-                  <p className="text-sm font-medium leading-snug tracking-wide">
-                    {item.description}
-                  </p>
                 </div>
               </div>
             </li>

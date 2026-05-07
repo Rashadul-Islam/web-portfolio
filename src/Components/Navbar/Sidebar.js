@@ -24,7 +24,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, logo }) => {
       {sidebarOpen ? (
         <div
           onClick={(e) => handleParentClick(e)}
-          className="w-screen h-screen bg-[rgba(0,0,0,0.8)] absolute top-0 left-0 transition duration-150 ease-in-out"
+          className="w-screen h-screen bg-[rgba(0,0,0,0.8)] absolute top-0 left-0 transition duration-150 ease-in-out xl:hidden lg:block md:block block"
         >
           <div
             ref={excludedRef}
