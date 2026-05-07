@@ -31,7 +31,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, logo }) => {
             className="md:w-[393px] w-[310px] h-screen bg-[#191b1e] drop-shadow-xl/50 px-[20px] md:px-[50px]"
           >
             <div className="md:w-[295px] w-[270px] h-[70px] pt-[30px] flex justify-between items-center">
-              <Image src={logo} alt="logo" height={70} width={"auto"} />
+              <Image src={logo} alt="logo" height={70} width={100} />
               <div
                 className="text-[#FF014F] text-[25px] h-[45px] w-[45px] rounded-full shadow-xl/30 cursor-pointer flex items-center justify-center"
                 onClick={() => handlelinkClick()}

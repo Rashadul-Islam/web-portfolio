@@ -26,7 +26,7 @@ const ContactMe = () => {
             alt="Contact Image"
             width={500}
             height={600}
-            className="w-full h-auto object-cover rounded-[10px] mb-[27px]"
+            className="object-cover rounded-[10px] mb-[27px]"
           />
           <h1 className="leading-[44px] text-[29px] text-[#E4E6EA] font-bold font-[montserrat] mb-[10px]">
             Md Rashadul Islam
