@@ -71,7 +71,13 @@ const Hero = () => {
           </div>
         </div>
         <div className="xl:w-[500px] md:w-[500px] w-[96%] xl:h-[513px] md:h-[553px] h-[350px] mx-auto xl:mx-0 bg-[#1C1E22] drop-shadow-xl/50 rounded-[5px]">
-          <Image src={myPhoto} alt="My Photo" height={600} width={513} />
+          <Image
+            src={myPhoto}
+            alt="My Photo"
+            height={600}
+            width={513}
+            priority
+          />
         </div>
       </div>
       <hr className="xl:w-[1320px] w-full mx-auto h-[1.5px] bg-[#121415] mt-[100px]" />

@@ -35,11 +35,21 @@ const Navbar = () => {
 
         <div className="w-auto h-[122px] bg-[#212428] flex justify-between items-center xl:px-[79px] md:px-[79px] px-[15px]">
           <Link
-            className="w-[139px] h-[70px]"
+            className="inline-block"
             href="#home"
             onClick={() => setActive("home")}
           >
-            <Image src={logo} alt="logo" height={70} width={139} priority />
+            <Image
+              src={logo}
+              alt="logo"
+              width={139}
+              height={70}
+              priority
+              style={{
+                width: "139px",
+                height: "auto",
+              }}
+            />
           </Link>
 
           <div className="flex items-center gap-6 font-[montserrat] text-[13px] height-[19.5px] text-[#C4CFDE]">
